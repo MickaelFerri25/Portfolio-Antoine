@@ -1,0 +1,12 @@
+@mixin cta-border {
+    background-color: $n;
+    border: solid 1px $w;
+    padding: 10px 16px;
+    color: $w;
+    transition: 0.2s ease-in-out;
+    font-family: 'Libre Franklin', sans-serif;
+    &:hover {
+        background: $w;
+        color: $n;
+    }
+}

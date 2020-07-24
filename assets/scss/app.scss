@@ -5,6 +5,19 @@
 @import 'modules/buttons';
 @import 'modules/cards';
 @import 'modules/formulaire';
-@import 'modules/number-section';
 @import 'modules/var';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    background-color: $bg;
+    scroll-behavior: smooth;
+    font-family: 'Montserrat', sans-serif;
+}
 
