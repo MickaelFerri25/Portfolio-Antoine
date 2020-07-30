@@ -1,12 +1,30 @@
-@mixin cta-border {
-    background-color: $n;
-    border: solid 1px $w;
+@mixin cta-blue {
+    background-color: $b;
+    border: solid 1px $b;
     padding: 10px 16px;
-    color: $w;
-    transition: 0.2s ease-in-out;
-    font-family: 'Libre Franklin', sans-serif;
+    color: $w!important;
+    border-radius: 3px;
+    transition: $tr;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
     &:hover {
-        background: $w;
-        color: $n;
+        background: $bg;
+        border: solid 1px $b;
+        color: $b!important;
+    }
+}
+
+@mixin cta-border {
+    background-color: $bg;
+    border: solid 1px $b;
+    padding: 10px 16px;
+    color: $b!important;
+    border-radius: 3px;
+    transition: $tr;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+    &:hover {
+        border: solid 1px rgb(12, 12, 97);
+        color: rgb(12, 12, 97)!important;
     }
 }

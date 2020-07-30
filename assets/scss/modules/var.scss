@@ -1,8 +1,11 @@
 $bg:#F8F8F8;
-$b: linear-gradient(180deg, #2A1DBF 0%, #1F1592 100%);
+$b: #2A1DBF;
+$blue: linear-gradient(180deg, #2A1DBF 0%, #1F1592 100%);
 $w: #fff;
+$w2: linear-gradient(180deg, #F8F8F8 0%, rgba(223, 223, 223, 0.27) 100%);
 $r: linear-gradient(180deg, #C71C1C 0%, #CC1F1F 100%);
 $g: #595959;
 $n: #191919;
 $input: #E9E9E9;
 $shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+$tr: 0.2s ease-in-out;

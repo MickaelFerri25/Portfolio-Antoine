@@ -1,0 +1,88 @@
+.avis {
+    margin-top: 10%;
+    margin-bottom: 56px;
+    h1 {
+        color: $b;
+        text-align: center;
+        margin-bottom: 24px;
+    }
+    .cards {
+        display: flex;
+        justify-content: space-evenly;
+        margin-bottom: 24px;
+    }
+    .card {
+        background-color: rgb(255, 255, 255);
+        padding: 24px;
+        border-radius: 4px;
+        width: 45%;
+        box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.05);
+        .line {
+            display: flex;
+            justify-content: space-between;
+            h2 {
+                font-size: 20px;
+            }
+            i {
+                color: rgb(236, 236, 8);
+            }
+        }
+        .lien-ytb {
+            margin-top: 5px;
+            display: block;
+            color: $b;
+            word-break: break-word;
+        }
+        p {
+            margin-top: 8px;
+        }
+    }
+    .lien-creation-avis {
+        text-align: center;
+        margin-top: 40px;
+    }
+    
+    @media screen and (max-width:850px){
+        .cards {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 24px;
+            .card {
+               width: 90%;
+               margin-bottom: 24px;
+            }
+        }
+        .cards2 {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            transform: translateY(-24px);
+            .card {
+               width: 90%;
+               margin-bottom: 24px;
+            }
+        } 
+    }
+    @media screen and (max-width:450px) {
+        .card {
+            .line {
+                display: flex;
+                justify-content: left;
+                flex-direction: column;
+                h2 {
+                    font-size: 20px;
+                    margin-bottom: 6px;
+            }
+                .star {
+                    margin-bottom: 6px;
+                }
+                i {
+                    color: rgb(236, 236, 8);
+                }
+            }
+        }
+    }
+}

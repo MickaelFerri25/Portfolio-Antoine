@@ -4,10 +4,256 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/app.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;900&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/bedd7b9608.js" crossorigin="anonymous" defer></script>
+    <!-- Liens javascript -->
+    <script src="./assets/js/burger.js" defer></script>
+    <script src="./assets/js/avis.js" defer ></script>
+    <!-- JavaScript libs -->
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
     <title>Thomas - Monteur Vidéos Freelance</title>
 </head>
 <body>
+    <header>
+        <nav id="nav-desktop">
+            <ul class="nav-left">
+                <li>
+                    <a href="" id="logo">Antoine</a>
+                </li>
+            </ul>
+
+            <ul class="nav-right">
+                <li>
+                    <a href="#about">A propos</a>
+                </li>
+
+                <li>
+                    <a href="#projets">Projets</a>
+                </li>
+
+                <li>
+                    <a href="#les-avis">Avis</a>
+                </li>
+
+                <li>
+                    <a href="#contact" class="cta-blue">Contact</a>
+                </li>
+
+                <li>
+                    <a href="https://utip.io/antoineedit" class="cta-border" target="BLANK_">Me soutenir</a>
+                </li>
+
+                <li>
+                    <!-- icone bg js -->
+                    <i class="fas fa-bars i-bg"></i>
+                </li>
+            </ul>
+        </nav>
+        <!-- nav js -->
+        <nav class="nav-phone">
+            <!-- icone croix js -->
+            <i class="fas fa-times i-croix"></i>
+            <ul class="liens">
+                <li>
+                    <a href="#about">A propos</a>
+                </li>
+
+                <li>
+                    <a href="#projets">Projets</a>
+                </li>
+
+                <li>
+                    <a href="#les-avis">Avis</a>
+                </li>
+
+                <li>
+                    <a href="#contact">Contact</a>
+                </li>
+
+                <li>
+                    <a href="https://utip.io/antoineedit" >Me soutenir</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <section class="about" id="about">
+        <div class="text">
+            <h1>Bonjour ! je suis monteur vidéo</h1>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>
+                Eum nesciunt eaque commodi mollitia iure iste quas dolorum!<br>
+                Vitae deserunt tempore ea nisi, dolorum rerum inventore incidunt<br>
+                ullam, qui odio distinctio ?
+            </p>
+            <!-- <a href="#" id="lien-voir-plus">Voir plus</a> -->
+            <div class="buttons">
+                <a href="#contact" class="cta-blue">Contact</a>
+                <a href="#projets" class="cta-border">Mes projets</a>
+            </div>
+        </div>
+        <div class="video">
+            <iframe src="https://www.youtube.com/embed/iM1c-trF-oI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </section>
+
+    <section class="projets" id="projets">
+        <h1>Mes projets</h1>
+        <!-- Flickity HTML init -->
+        <div class="carousel" data-flickity='{ "wrapAround": true }'>
+          <div class="carousel-cell">
+            <iframe src="https://www.youtube.com/embed/taqh-zX0Z74" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+          <div class="carousel-cell">
+            <iframe  src="https://www.youtube.com/embed/n3z4sTKn-f0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+          <div class="carousel-cell">
+            <iframe src="https://www.youtube.com/embed/taqh-zX0Z74" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+          <div class="carousel-cell">
+            <iframe src="https://www.youtube.com/embed/taqh-zX0Z74" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </div>
+    </section>
+    
+    <section class="avis" id="les-avis">
+        <h1>Avis clients</h1>
+        <div class="cards">
+            <div class="card">
+                <div class="line">
+                    <h2>Mickael Ferri</h2>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+                <a href="" class="lien-ytb">https://www.youtube.com/watch?v=n3z4sTKn-f0</a>
+                <p>
+                    Antoine est très à l’écoute de nos<br>
+                    besoins et a réalisé avec brio nos vidéos lors de la campagne aux présidentielles.
+                </p>
+                <!-- Disponible seulement pour l'admin -->
+                <a href="#" class="red">Supprimer l'avis</a>
+            </div>
+            <div class="card">
+                <div class="line">
+                    <h2>Mickael Ferri</h2>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+                <a href="" class="lien-ytb">https://www.youtube.com/watch?v=n3z4sTKn-f0</a>
+                <p>
+                    Antoine est très à l’écoute de nos<br>
+                    besoins et a réalisé avec brio nos vidéos lors de la campagne aux présidentielles.
+                </p>
+                <!-- Disponible seulement pour l'admin -->
+                <a href="#" class="red">Supprimer l'avis</a>
+            </div>
+        </div>
+        <div class="cards cards2">
+            <div class="card">
+                <div class="line">
+                    <h2>Mickael Ferri</h2>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+                <a href="" class="lien-ytb">https://www.youtube.com/watch?v=n3z4sTKn-f0</a>
+                <p>
+                    Antoine est très à l’écoute de nos<br>
+                    besoins et a réalisé avec brio nos vidéos lors de la campagne aux présidentielles.
+                </p>
+                <!-- Disponible seulement pour l'admin -->
+                <a href="#" class="red">Supprimer l'avis</a>
+            </div>
+            <div class="card">
+                <div class="line">
+                    <h2>Mickael Ferri</h2>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+                <a href="" class="lien-ytb">https://www.youtube.com/watch?v=n3z4sTKn-f0</a>
+                <p>
+                    Antoine est très à l’écoute de nos<br>
+                    besoins et a réalisé avec brio nos vidéos lors de la campagne aux présidentielles.
+                </p>
+                <!-- Disponible seulement pour l'admin -->
+                <a href="#" class="red">Supprimer l'avis</a>
+            </div>
+        </div>
+        <div class="lien-creation-avis button-avis" id="div">
+            <a href="#div" class="cta-border">Crée ton avis</a>
+        </div>
+        <form action="" class="form-avis">
+            <div class="infos">
+                <label for="">
+                    <input type="text" placeholder="Prénom / Nom" required>
+                </label>
+                <label for="">
+                    <select name="" id="" required>
+                        <option value="">Nombre d'étoiles</option>
+                        <option value="">1 étoile</option>
+                        <option value="">2 étoiles</option>
+                        <option value="">3 étoiles</option>
+                        <option value="">4 étoiles</option>
+                        <option value="">5 étoiles</option>
+                    </select>
+                </label>
+            </div>
+            <div class="msg">
+                <label for="">
+                    <input type="text" placeholder="URL de votre chaine youtube" required>
+                </label>
+                <label for="" class="textarea">
+                    <textarea name="" id="" placeholder="Que penser vous du travail d'antoine ?" required></textarea>
+                </label>
+                <button type="submit" class="cta-blue">Envoyer</button>
+            </div>
+        </form>
+    </section>
+    
+    <section class="contact" id="contact">
+        <form action="" class="form-contact">
+            <div class="title-contact">
+                <h3>Contact</h3> 
+            </div>
+            <div class="infos">
+                <label for="">
+                    <input type="text" placeholder="Prénom" required>
+                </label>
+                <label for="">
+                    <input type="email" placeholder="Adresse Email" name="" id="">
+                </label>
+            </div>
+            <div class="msg">
+                <label for="" class="textarea">
+                    <textarea name="" id="" placeholder="Votre message" required></textarea>
+                </label>
+                <button type="submit" class="cta-blue">Envoyer</button>
+            </div>
+        </form>
+    </section>
+    
+    <footer>
+        <p>Made with ❤️ by <a href="">Mickael</a></p>
+    </footer>
 </body>
 </html>
